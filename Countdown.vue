@@ -35,13 +35,11 @@ export default {
     data() {
         return {
             now: Math.trunc((new Date()).getTime() / 1000),
-            date: null,
             diff: 0
         }
     },
     mounted() {
-        this.date = Math.trunc(Date.parse(this.deadline.replace(/-/g, "/")) / 1000)
-
+    
         interval = setInterval(() => {
             this.now = Math.trunc((new Date()).getTime() / 1000)
         }, 1000)
@@ -49,6 +47,9 @@ export default {
         console.log(interval)
     },
     computed: {
+        date() {
+            return Math.trunc(Date.parse(this.deadline.replace(/-/g, "/")) / 1000)
+        },
         seconds() {
             return Math.trunc(this.diff) % 60
         },
