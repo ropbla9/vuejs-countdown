@@ -39,7 +39,7 @@ export default {
         }
     },
     mounted() {
-    
+
         interval = setInterval(() => {
             this.now = Math.trunc((new Date()).getTime() / 1000)
         }, 1000)
@@ -95,7 +95,7 @@ export default {
 .vue-countdown li:after {
   content: ":";
   position: absolute;
-  top: 0;
+  top: 30px;
   right: -13px;
   font-size: 32px;
 }
@@ -109,7 +109,7 @@ export default {
   content: "";
 }
 .vue-countdown .digit {
-  font-size: 32px;
+  font-size: 82px;
   font-weight: 600;
   line-height: 1.4;
   margin-bottom: 0;
