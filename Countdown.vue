@@ -73,6 +73,7 @@ export default {
                 this.diff = 0;
                 // Remove interval
                 clearInterval(interval);
+                this.$emit('stop')
             }
         }
     }
