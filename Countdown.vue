@@ -118,6 +118,6 @@ export default {
 .vue-countdown .text {
   text-transform: uppercase;
   margin-bottom: 0;
-  font-size: 10px;
+  font-size: 15px;
 }
 </style>
